@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <opencv2/highgui/cap_ios.h>
+#import "CvEffects/RetroFilter.hpp"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController<CvVideoCameraDelegate>
+{
+    CvVideoCamera* videoCamera;
+    bool isCapturing;
+    RetroFilter::Images images;
+    cv::Ptr<RetroFilter> filter;
+}
 
+@property (nonatomic, retain) CvVideoCamera* videoCamera;
+@property (nonatomic, retain) IBOutlet UIImageView *imageView;
+@property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *startCaptureButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *stopCaptureButton;
+
+-(IBAction)startOrStopCaptureButtonPressed:(id)sender;
 
 @end
-

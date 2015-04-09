@@ -15,6 +15,23 @@
 		D74BFD3E1AD6FF9F00E50824 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD3D1AD6FF9F00E50824 /* Images.xcassets */; };
 		D74BFD411AD6FF9F00E50824 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD3F1AD6FF9F00E50824 /* LaunchScreen.xib */; };
 		D74BFD4D1AD6FF9F00E50824 /* MosaickingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D74BFD4C1AD6FF9F00E50824 /* MosaickingTests.m */; };
+		D74BFD571AD700E100E50824 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD561AD700E100E50824 /* opencv2.framework */; };
+		D74BFD591AD7021C00E50824 /* CvEffects in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD581AD7021C00E50824 /* CvEffects */; };
+		D74BFD5B1AD7026F00E50824 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD5A1AD7026F00E50824 /* AVFoundation.framework */; };
+		D74BFD5E1AD7029200E50824 /* libCvEffects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD5D1AD7029200E50824 /* libCvEffects.a */; };
+		D74BFD601AD702A600E50824 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD5F1AD702A600E50824 /* QuartzCore.framework */; };
+		D74BFD621AD702AE00E50824 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD611AD702AE00E50824 /* CoreImage.framework */; };
+		D74BFD641AD702B700E50824 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD631AD702B700E50824 /* CoreVideo.framework */; };
+		D74BFD661AD702BE00E50824 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD651AD702BE00E50824 /* Accelerate.framework */; };
+		D74BFD681AD702C700E50824 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD671AD702C700E50824 /* AssetsLibrary.framework */; };
+		D74BFD6A1AD702D300E50824 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD691AD702D300E50824 /* UIKit.framework */; };
+		D74BFD6C1AD702D900E50824 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD6B1AD702D900E50824 /* Foundation.framework */; };
+		D74BFD6E1AD702E000E50824 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD6D1AD702E000E50824 /* CoreGraphics.framework */; };
+		D74BFD711AD705AD00E50824 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD701AD705AD00E50824 /* CoreMedia.framework */; };
+		D74BFD751AD7098100E50824 /* fuzzy_border.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD731AD7098100E50824 /* fuzzy_border.png */; };
+		D74BFD761AD7098100E50824 /* scratches.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD741AD7098100E50824 /* scratches.png */; };
+		D74BFD791AD70C3D00E50824 /* Video Camera Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */; };
+		D74BFD7A1AD70C3D00E50824 /* Video Camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD781AD70C3D00E50824 /* Video Camera-50.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +60,24 @@
 		D74BFD461AD6FF9F00E50824 /* MosaickingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosaickingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74BFD4B1AD6FF9F00E50824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D74BFD4C1AD6FF9F00E50824 /* MosaickingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MosaickingTests.m; sourceTree = "<group>"; };
+		D74BFD561AD700E100E50824 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		D74BFD581AD7021C00E50824 /* CvEffects */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CvEffects; sourceTree = "<group>"; };
+		D74BFD5A1AD7026F00E50824 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D74BFD5D1AD7029200E50824 /* libCvEffects.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCvEffects.a; path = "../../../Library/Developer/Xcode/DerivedData/Mosaicking-dltgrgfgzcbojyewemuendzrmdiu/Build/Products/Debug-iphoneos/libCvEffects.a"; sourceTree = "<group>"; };
+		D74BFD5F1AD702A600E50824 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D74BFD611AD702AE00E50824 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D74BFD631AD702B700E50824 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		D74BFD651AD702BE00E50824 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D74BFD671AD702C700E50824 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D74BFD691AD702D300E50824 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D74BFD6B1AD702D900E50824 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D74BFD6D1AD702E000E50824 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D74BFD6F1AD703EE00E50824 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D74BFD701AD705AD00E50824 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		D74BFD731AD7098100E50824 /* fuzzy_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fuzzy_border.png; path = CvEffects/CvEffects/fuzzy_border.png; sourceTree = SOURCE_ROOT; };
+		D74BFD741AD7098100E50824 /* scratches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scratches.png; path = CvEffects/CvEffects/scratches.png; sourceTree = SOURCE_ROOT; };
+		D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera Filled-50.png"; sourceTree = "<group>"; };
+		D74BFD781AD70C3D00E50824 /* Video Camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera-50.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +85,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74BFD711AD705AD00E50824 /* CoreMedia.framework in Frameworks */,
+				D74BFD6E1AD702E000E50824 /* CoreGraphics.framework in Frameworks */,
+				D74BFD6C1AD702D900E50824 /* Foundation.framework in Frameworks */,
+				D74BFD6A1AD702D300E50824 /* UIKit.framework in Frameworks */,
+				D74BFD5B1AD7026F00E50824 /* AVFoundation.framework in Frameworks */,
+				D74BFD681AD702C700E50824 /* AssetsLibrary.framework in Frameworks */,
+				D74BFD661AD702BE00E50824 /* Accelerate.framework in Frameworks */,
+				D74BFD641AD702B700E50824 /* CoreVideo.framework in Frameworks */,
+				D74BFD621AD702AE00E50824 /* CoreImage.framework in Frameworks */,
+				D74BFD601AD702A600E50824 /* QuartzCore.framework in Frameworks */,
+				D74BFD5E1AD7029200E50824 /* libCvEffects.a in Frameworks */,
+				D74BFD571AD700E100E50824 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +113,8 @@
 		D74BFD211AD6FF9F00E50824 = {
 			isa = PBXGroup;
 			children = (
+				D74BFD701AD705AD00E50824 /* CoreMedia.framework */,
+				D74BFD581AD7021C00E50824 /* CvEffects */,
 				D74BFD2C1AD6FF9F00E50824 /* Mosaicking */,
 				D74BFD491AD6FF9F00E50824 /* MosaickingTests */,
 				D74BFD2B1AD6FF9F00E50824 /* Products */,
@@ -101,8 +150,24 @@
 		D74BFD2D1AD6FF9F00E50824 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */,
+				D74BFD781AD70C3D00E50824 /* Video Camera-50.png */,
+				D74BFD731AD7098100E50824 /* fuzzy_border.png */,
+				D74BFD741AD7098100E50824 /* scratches.png */,
+				D74BFD6D1AD702E000E50824 /* CoreGraphics.framework */,
+				D74BFD6B1AD702D900E50824 /* Foundation.framework */,
+				D74BFD691AD702D300E50824 /* UIKit.framework */,
+				D74BFD671AD702C700E50824 /* AssetsLibrary.framework */,
+				D74BFD651AD702BE00E50824 /* Accelerate.framework */,
+				D74BFD631AD702B700E50824 /* CoreVideo.framework */,
+				D74BFD611AD702AE00E50824 /* CoreImage.framework */,
+				D74BFD5F1AD702A600E50824 /* QuartzCore.framework */,
+				D74BFD5D1AD7029200E50824 /* libCvEffects.a */,
+				D74BFD5A1AD7026F00E50824 /* AVFoundation.framework */,
+				D74BFD561AD700E100E50824 /* opencv2.framework */,
 				D74BFD2E1AD6FF9F00E50824 /* Info.plist */,
 				D74BFD2F1AD6FF9F00E50824 /* main.m */,
+				D74BFD6F1AD703EE00E50824 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -173,6 +238,7 @@
 				TargetAttributes = {
 					D74BFD291AD6FF9F00E50824 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 3VW9ZMYGC7;
 					};
 					D74BFD451AD6FF9F00E50824 = {
 						CreatedOnToolsVersion = 6.3;
@@ -204,8 +270,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74BFD7A1AD70C3D00E50824 /* Video Camera-50.png in Resources */,
+				D74BFD761AD7098100E50824 /* scratches.png in Resources */,
 				D74BFD3C1AD6FF9F00E50824 /* Main.storyboard in Resources */,
 				D74BFD411AD6FF9F00E50824 /* LaunchScreen.xib in Resources */,
+				D74BFD791AD70C3D00E50824 /* Video Camera Filled-50.png in Resources */,
+				D74BFD591AD7021C00E50824 /* CvEffects in Resources */,
+				D74BFD751AD7098100E50824 /* fuzzy_border.png in Resources */,
 				D74BFD3E1AD6FF9F00E50824 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,8 +424,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mosaicking",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Mosaicking/PrefixHeader.pch;
 				INFOPLIST_FILE = Mosaicking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Mosaicking-dltgrgfgzcbojyewemuendzrmdiu/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -363,8 +447,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mosaicking",
+				);
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Mosaicking/PrefixHeader.pch;
 				INFOPLIST_FILE = Mosaicking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Mosaicking-dltgrgfgzcbojyewemuendzrmdiu/Build/Products/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
