@@ -90,9 +90,10 @@ static void UIImageToMat(const UIImage* image, cv::Mat& m,
 @implementation FirstViewController
 
 @synthesize imageView;
-@synthesize startCaptureButton;
+@synthesize startStopCaptureButton;
 @synthesize toolbar;
 @synthesize videoCamera;
+@synthesize titleView;
 
 - (NSUInteger)supportedInterfaceOrientations
 {
@@ -135,6 +136,7 @@ static void UIImageToMat(const UIImage* image, cv::Mat& m,
     images.frameSize = frameSize;
     
     filter = new RetroFilter(images);
+    
 }
 
 
@@ -142,20 +144,30 @@ static void UIImageToMat(const UIImage* image, cv::Mat& m,
 {
     
     if (!isCapturing) {
+        // OFFの画像設定
+        [startStopCaptureButton setBackgroundImage:[UIImage imageNamed:@"Stop-50"] forState:UIControlStateNormal];
+        // OFFでボタンをタップ中の画像設定
+        [startStopCaptureButton setBackgroundImage:[UIImage imageNamed:@"Stop-50"] forState:UIControlStateHighlighted];
+        titleView.hidden = TRUE;
         [videoCamera start];
         isCapturing = TRUE;
     } else {
-        [videoCamera stop];
+        // ONの画像設定
+        [startStopCaptureButton setBackgroundImage:[UIImage imageNamed:@"Video Camera Filled-50"] forState:UIControlStateNormal | UIControlStateSelected];
+        // ONでボタンをタップ中の画像設定
+        [startStopCaptureButton setBackgroundImage:[UIImage imageNamed:@"Stop-50"] forState:UIControlStateHighlighted | UIControlStateSelected];
         
+        titleView.hidden = FALSE;
+        [videoCamera stop];
         NSString* relativePath = [videoCamera.videoFileURL relativePath];
         UISaveVideoAtPathToSavedPhotosAlbum(relativePath, self, nil, NULL);
         
         //Alert window
         UIAlertView *alert = [UIAlertView alloc];
-        alert = [alert initWithTitle:@"Camera info"
-                             message:@"The video was saved to the Gallery!"
+        alert = [alert initWithTitle:@"録画完了"
+                             message:@"フォトギャラリーへ保存しました。"
                             delegate:self
-                   cancelButtonTitle:@"Continue"
+                   cancelButtonTitle:@"閉じる"
                    otherButtonTitles:nil];
         [alert show];
         

@@ -32,6 +32,8 @@
 		D74BFD791AD70C3D00E50824 /* Video Camera Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */; };
 		D74BFD7A1AD70C3D00E50824 /* Video Camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD781AD70C3D00E50824 /* Video Camera-50.png */; };
 		D9E521111AD7911F0065CF44 /* libCvEffects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E521101AD7911F0065CF44 /* libCvEffects.a */; };
+		D9E521151AD7A6460065CF44 /* Stop-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E521141AD7A6460065CF44 /* Stop-50.png */; };
+		D9E5214C1AD7B7E60065CF44 /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = D9E5214B1AD7B7E60065CF44 /* haarcascade_eye.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera Filled-50.png"; sourceTree = "<group>"; };
 		D74BFD781AD70C3D00E50824 /* Video Camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera-50.png"; sourceTree = "<group>"; };
 		D9E521101AD7911F0065CF44 /* libCvEffects.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCvEffects.a; path = "../../Library/Developer/Xcode/DerivedData/Mosaicking-enigiqaqnebvmneshekeqpwwxdew/Build/Products/Debug-iphoneos/libCvEffects.a"; sourceTree = "<group>"; };
+		D9E521141AD7A6460065CF44 /* Stop-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stop-50.png"; sourceTree = "<group>"; };
+		D9E5214B1AD7B7E60065CF44 /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 		D74BFD2D1AD6FF9F00E50824 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9E5214B1AD7B7E60065CF44 /* haarcascade_eye.xml */,
+				D9E521141AD7A6460065CF44 /* Stop-50.png */,
 				D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */,
 				D74BFD781AD70C3D00E50824 /* Video Camera-50.png */,
 				D74BFD731AD7098100E50824 /* fuzzy_border.png */,
@@ -277,8 +283,10 @@
 				D74BFD3C1AD6FF9F00E50824 /* Main.storyboard in Resources */,
 				D74BFD411AD6FF9F00E50824 /* LaunchScreen.xib in Resources */,
 				D74BFD791AD70C3D00E50824 /* Video Camera Filled-50.png in Resources */,
+				D9E521151AD7A6460065CF44 /* Stop-50.png in Resources */,
 				D74BFD591AD7021C00E50824 /* CvEffects in Resources */,
 				D74BFD751AD7098100E50824 /* fuzzy_border.png in Resources */,
+				D9E5214C1AD7B7E60065CF44 /* haarcascade_eye.xml in Resources */,
 				D74BFD3E1AD6FF9F00E50824 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

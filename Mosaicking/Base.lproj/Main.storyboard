@@ -17,62 +17,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUf-5Y-vsJ">
-                                <rect key="frame" x="5" y="29" width="606" height="551"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yUf-5Y-vsJ">
+                                <rect key="frame" x="0.0" y="0.0" width="606" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et7-pD-vvb">
-                                <rect key="frame" x="138" y="39" width="50" height="50"/>
-                                <state key="normal" backgroundImage="Video Camera-50.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="et7-pD-vvb">
+                                <rect key="frame" x="278" y="501" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="Video Camera Filled-50.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="startOrStopCaptureButtonPressed:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Blc-XY-22J"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Video Camera-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="n4i-0c-1Ti">
-                                <rect key="frame" x="275" y="501" width="50" height="50"/>
-                                <gestureRecognizers/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-oO-Oga">
+                                <rect key="frame" x="89" y="225" width="422" height="101"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="クラシックムービー" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="sxP-AB-XHg">
+                                        <rect key="frame" x="49" y="30" width="324" height="42"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="レトロな雰囲気で録画します" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdq-AZ-V77">
+                                        <rect key="frame" x="121" y="80" width="182" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="sxP-AB-XHg" secondAttribute="centerX" id="MeJ-dK-m9Y"/>
+                                    <constraint firstItem="Fdq-AZ-V77" firstAttribute="top" secondItem="sxP-AB-XHg" secondAttribute="bottom" constant="8" symbolic="YES" id="f9V-uF-m5c"/>
+                                    <constraint firstAttribute="centerY" secondItem="sxP-AB-XHg" secondAttribute="centerY" id="gfm-NO-N69"/>
+                                    <constraint firstItem="Fdq-AZ-V77" firstAttribute="leading" secondItem="uR9-oO-Oga" secondAttribute="leading" constant="121" id="xKw-bD-ffo"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="et7-pD-vvb" firstAttribute="bottom" secondItem="yUf-5Y-vsJ" secondAttribute="bottom" id="1SL-Ej-lUD"/>
                             <constraint firstItem="yUf-5Y-vsJ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-16" id="40E-M6-sTm"/>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="uR9-oO-Oga" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="9EE-xU-Kio"/>
                             <constraint firstItem="yUf-5Y-vsJ" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="9jc-Ja-LNT"/>
-                            <constraint firstAttribute="centerX" secondItem="n4i-0c-1Ti" secondAttribute="centerX" id="DTj-Mv-3hc"/>
+                            <constraint firstItem="uR9-oO-Oga" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="205" id="KMS-sg-AmG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yUf-5Y-vsJ" secondAttribute="trailing" constant="-22" id="NZl-ad-EKm"/>
+                            <constraint firstItem="uR9-oO-Oga" firstAttribute="centerY" secondItem="yUf-5Y-vsJ" secondAttribute="centerY" id="Q3q-Ho-aRy"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="yUf-5Y-vsJ" secondAttribute="bottom" id="bU5-X9-7LZ"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="n4i-0c-1Ti" firstAttribute="bottom" secondItem="yUf-5Y-vsJ" secondAttribute="bottom" id="cwG-4d-Wxa"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="uR9-oO-Oga" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="73" id="tyf-cD-E4h"/>
+                            <constraint firstItem="et7-pD-vvb" firstAttribute="centerX" secondItem="yUf-5Y-vsJ" secondAttribute="centerX" id="uMG-hZ-tzH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="First" image="first" selectedImage="first" id="acW-dT-cKf"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imageView" destination="yUf-5Y-vsJ" id="itF-A7-qii"/>
+                        <outlet property="startStopCaptureButton" destination="et7-pD-vvb" id="lr5-Zg-EoZ"/>
+                        <outlet property="titleView" destination="uR9-oO-Oga" id="XtI-va-9M4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="BXM-EU-1du">
-                    <connections>
-                        <action selector="startOrStopCaptureButtonPressed:" destination="9pv-A4-QxB" id="Uf1-wO-G4l"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
@@ -88,29 +94,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="210" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2r-tW-bGR">
+                                <rect key="frame" x="-3" y="25" width="606" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="216" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18k-I1-Cer">
+                                <rect key="frame" x="89" y="220" width="422" height="161"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="モザイクムービー" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lnh-Zh-CfN">
+                                        <rect key="frame" x="67" y="60" width="288" height="42"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="犯罪的な雰囲気で録画します" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNy-Ja-mET">
+                                        <rect key="frame" x="120" y="110" width="182" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChX-vG-1z4">
+                                <rect key="frame" x="275" y="493" width="50" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="Video Camera Filled-50.png">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOrStopCaptureButtonPressed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uHG-73-rUK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="imageView" destination="j2r-tW-bGR" id="Swm-NU-bOn"/>
+                        <outlet property="startStopCaptureButton" destination="ChX-vG-1z4" id="KT6-X7-ecX"/>
+                        <outlet property="titleView" destination="18k-I1-Cer" id="DDw-ra-fdG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,7 +161,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Video Camera-50.png" width="50" height="50"/>
+        <image name="Video Camera Filled-50.png" width="50" height="50"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

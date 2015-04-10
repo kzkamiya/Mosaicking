@@ -21,8 +21,8 @@
 @property (nonatomic, retain) CvVideoCamera* videoCamera;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *startCaptureButton;
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *stopCaptureButton;
+@property (weak, nonatomic) IBOutlet UIButton *startStopCaptureButton;
+@property (weak, nonatomic) IBOutlet UIView *titleView;
 
 -(IBAction)startOrStopCaptureButtonPressed:(id)sender;
 
