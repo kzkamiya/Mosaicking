@@ -19,6 +19,7 @@
 		83FA796B1749096700248405 /* RetroFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 83FA79681749096700248405 /* RetroFilter.cpp */; };
 		83FA796D1749097E00248405 /* RetroFilter.hpp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 83FA79691749096700248405 /* RetroFilter.hpp */; };
 		D7B724921ACF89D900ED540C /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B724911ACF89D900ED540C /* opencv2.framework */; };
+		D9E521131AD793D20065CF44 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E521121AD793D20065CF44 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		83FA79691749096700248405 /* RetroFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RetroFilter.hpp; sourceTree = "<group>"; };
 		83FA796A1749096700248405 /* scratches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scratches.png; sourceTree = "<group>"; };
 		D7B724911ACF89D900ED540C /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		D9E521121AD793D20065CF44 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../Mosaicking/opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			files = (
 				D7B724921ACF89D900ED540C /* opencv2.framework in Frameworks */,
 				5168F9A91752464E00FC67D8 /* Accelerate.framework in Frameworks */,
+				D9E521131AD793D20065CF44 /* opencv2.framework in Frameworks */,
 				51E2042B1747A1C3005C39DB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +98,7 @@
 		51E2041E1747A1C3005C39DB = {
 			isa = PBXGroup;
 			children = (
+				D9E521121AD793D20065CF44 /* opencv2.framework */,
 				510745701750B46A00B6CCD9 /* FaceAnimator */,
 				51E2042C1747A1C3005C39DB /* CvEffects */,
 				51E204291747A1C3005C39DB /* Frameworks */,
@@ -232,6 +236,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -246,6 +251,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1774ca09-3362-48c9-aca9-d9bcd21d13e3";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -262,12 +268,14 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PROVISIONING_PROFILE = "1774ca09-3362-48c9-aca9-d9bcd21d13e3";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -276,17 +284,21 @@
 		51E204361747A1C3005C39DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DSTROOT = /tmp/CvEffects.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
 					"$(PROJECT_DIR)",
 					/Users/kzkamiya/Desktop/HelloWorld1/HelloWorld1,
+					/Users/dev2/Documents/Mosaicking/Mosaicking,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CvEffects/CvEffects-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CvEffects;
+				PROVISIONING_PROFILE = "1774ca09-3362-48c9-aca9-d9bcd21d13e3";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -294,17 +306,21 @@
 		51E204371747A1C3005C39DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				DSTROOT = /tmp/CvEffects.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/..\"",
 					"$(PROJECT_DIR)",
 					/Users/kzkamiya/Desktop/HelloWorld1/HelloWorld1,
+					/Users/dev2/Documents/Mosaicking/Mosaicking,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CvEffects/CvEffects-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = CvEffects;
+				PROVISIONING_PROFILE = "1774ca09-3362-48c9-aca9-d9bcd21d13e3";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

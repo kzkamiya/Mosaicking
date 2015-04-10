@@ -18,7 +18,6 @@
 		D74BFD571AD700E100E50824 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD561AD700E100E50824 /* opencv2.framework */; };
 		D74BFD591AD7021C00E50824 /* CvEffects in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD581AD7021C00E50824 /* CvEffects */; };
 		D74BFD5B1AD7026F00E50824 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD5A1AD7026F00E50824 /* AVFoundation.framework */; };
-		D74BFD5E1AD7029200E50824 /* libCvEffects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD5D1AD7029200E50824 /* libCvEffects.a */; };
 		D74BFD601AD702A600E50824 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD5F1AD702A600E50824 /* QuartzCore.framework */; };
 		D74BFD621AD702AE00E50824 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD611AD702AE00E50824 /* CoreImage.framework */; };
 		D74BFD641AD702B700E50824 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BFD631AD702B700E50824 /* CoreVideo.framework */; };
@@ -32,6 +31,7 @@
 		D74BFD761AD7098100E50824 /* scratches.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD741AD7098100E50824 /* scratches.png */; };
 		D74BFD791AD70C3D00E50824 /* Video Camera Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */; };
 		D74BFD7A1AD70C3D00E50824 /* Video Camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D74BFD781AD70C3D00E50824 /* Video Camera-50.png */; };
+		D9E521111AD7911F0065CF44 /* libCvEffects.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9E521101AD7911F0065CF44 /* libCvEffects.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +78,7 @@
 		D74BFD741AD7098100E50824 /* scratches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scratches.png; path = CvEffects/CvEffects/scratches.png; sourceTree = SOURCE_ROOT; };
 		D74BFD771AD70C3D00E50824 /* Video Camera Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera Filled-50.png"; sourceTree = "<group>"; };
 		D74BFD781AD70C3D00E50824 /* Video Camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video Camera-50.png"; sourceTree = "<group>"; };
+		D9E521101AD7911F0065CF44 /* libCvEffects.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCvEffects.a; path = "../../Library/Developer/Xcode/DerivedData/Mosaicking-enigiqaqnebvmneshekeqpwwxdew/Build/Products/Debug-iphoneos/libCvEffects.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E521111AD7911F0065CF44 /* libCvEffects.a in Frameworks */,
 				D74BFD711AD705AD00E50824 /* CoreMedia.framework in Frameworks */,
 				D74BFD6E1AD702E000E50824 /* CoreGraphics.framework in Frameworks */,
 				D74BFD6C1AD702D900E50824 /* Foundation.framework in Frameworks */,
@@ -95,7 +97,6 @@
 				D74BFD641AD702B700E50824 /* CoreVideo.framework in Frameworks */,
 				D74BFD621AD702AE00E50824 /* CoreImage.framework in Frameworks */,
 				D74BFD601AD702A600E50824 /* QuartzCore.framework in Frameworks */,
-				D74BFD5E1AD7029200E50824 /* libCvEffects.a in Frameworks */,
 				D74BFD571AD700E100E50824 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,7 +114,7 @@
 		D74BFD211AD6FF9F00E50824 = {
 			isa = PBXGroup;
 			children = (
-				D74BFD701AD705AD00E50824 /* CoreMedia.framework */,
+				D9E521101AD7911F0065CF44 /* libCvEffects.a */,
 				D74BFD581AD7021C00E50824 /* CvEffects */,
 				D74BFD2C1AD6FF9F00E50824 /* Mosaicking */,
 				D74BFD491AD6FF9F00E50824 /* MosaickingTests */,
@@ -154,6 +155,7 @@
 				D74BFD781AD70C3D00E50824 /* Video Camera-50.png */,
 				D74BFD731AD7098100E50824 /* fuzzy_border.png */,
 				D74BFD741AD7098100E50824 /* scratches.png */,
+				D74BFD701AD705AD00E50824 /* CoreMedia.framework */,
 				D74BFD6D1AD702E000E50824 /* CoreGraphics.framework */,
 				D74BFD6B1AD702D900E50824 /* Foundation.framework */,
 				D74BFD691AD702D300E50824 /* UIKit.framework */,
@@ -376,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -413,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -423,8 +425,10 @@
 		D74BFD511AD6FF9F00E50824 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kazutaka Kamiya (3VW9ZMYGC7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kazutaka Kamiya (3VW9ZMYGC7)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Mosaicking",
@@ -438,16 +442,21 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Mosaicking-dltgrgfgzcbojyewemuendzrmdiu/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Mosaicking-enigiqaqnebvmneshekeqpwwxdew/Build/Products/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1774ca09-3362-48c9-aca9-d9bcd21d13e3";
+				USER_HEADER_SEARCH_PATHS = "include/${PRODUCT_NAME}";
 			};
 			name = Debug;
 		};
 		D74BFD521AD6FF9F00E50824 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kazutaka Kamiya (3VW9ZMYGC7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kazutaka Kamiya (3VW9ZMYGC7)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Mosaicking",
@@ -461,8 +470,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Mosaicking-dltgrgfgzcbojyewemuendzrmdiu/Build/Products/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Mosaicking-enigiqaqnebvmneshekeqpwwxdew/Build/Products/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1774ca09-3362-48c9-aca9-d9bcd21d13e3";
+				USER_HEADER_SEARCH_PATHS = "include/${PRODUCT_NAME}";
 			};
 			name = Release;
 		};
@@ -519,6 +531,7 @@
 				D74BFD521AD6FF9F00E50824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D74BFD531AD6FF9F00E50824 /* Build configuration list for PBXNativeTarget "MosaickingTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +540,7 @@
 				D74BFD551AD6FF9F00E50824 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
